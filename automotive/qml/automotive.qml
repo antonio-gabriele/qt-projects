@@ -56,10 +56,10 @@ import QtQuick.Window 2.0
 
 ApplicationWindow {
     id: window
-    width: 1280
-    height: 720
-    minimumWidth: 1180
-    minimumHeight: 663
+    width: 800
+    height: 480
+    minimumWidth: 800
+    minimumHeight: 480
     visible: true
     title: "Qt Quick Controls 2 - Imagine Style Example: Automotive"
 
@@ -88,7 +88,7 @@ ApplicationWindow {
     Frame {
         id: frame
         anchors.fill: parent
-        anchors.margins: 90
+        anchors.margins: 5
 
         RowLayout {
             id: mainRowLayout
@@ -360,7 +360,7 @@ ApplicationWindow {
                 implicitWidth: 1
                 Layout.fillHeight: true
             }
-
+            /*
             ColumnLayout {
                 Layout.preferredWidth: 350
                 Layout.fillWidth: true
@@ -422,7 +422,7 @@ ApplicationWindow {
                     }
                 }
             }
-
+            */
             Rectangle {
                 color: colorMain
                 implicitWidth: 1
