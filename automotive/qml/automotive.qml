@@ -93,7 +93,7 @@ ApplicationWindow {
         RowLayout {
             id: mainRowLayout
             anchors.fill: parent
-            anchors.margins: 24
+            anchors.margins: 0
             spacing: 36
 
             Container {
@@ -355,74 +355,6 @@ ApplicationWindow {
                 }
             }
 
-            Rectangle {
-                color: colorMain
-                implicitWidth: 1
-                Layout.fillHeight: true
-            }
-            /*
-            ColumnLayout {
-                Layout.preferredWidth: 350
-                Layout.fillWidth: true
-                Layout.fillHeight: true
-
-                GlowingLabel {
-                    id: timeLabel
-                    text: qsTr("11:02")
-                    font.pixelSize: fontSizeExtraLarge
-
-                    Layout.alignment: Qt.AlignHCenter
-
-                    GlowingLabel {
-                        text: qsTr("AM")
-                        font.pixelSize: fontSizeLarge
-                        anchors.left: parent.right
-                        anchors.leftMargin: 8
-                    }
-                }
-
-                Label {
-                    text: qsTr("01/01/2018")
-                    color: colorLightGrey
-                    font.pixelSize: fontSizeMedium
-
-                    Layout.alignment: Qt.AlignHCenter
-                    Layout.topMargin: 2
-                    Layout.bottomMargin: 10
-                }
-
-                Image {
-                    source: "qrc:/icons/car.png"
-                    fillMode: Image.PreserveAspectFit
-
-                    Layout.fillHeight: true
-
-                    Column {
-                        x: parent.width * 0.88
-                        y: parent.height * 0.56
-                        spacing: 3
-
-                        Image {
-                            source: "qrc:/icons/warning.png"
-                            anchors.horizontalCenter: parent.horizontalCenter
-
-                            layer.enabled: true
-                            layer.effect: CustomGlow {
-                                spread: 0.2
-                                samples: 40
-                                color: colorWarning
-                            }
-                        }
-
-                        GlowingLabel {
-                            text: qsTr("Door open")
-                            color: colorWarning
-                            glowColor: Qt.rgba(colorWarning.r, colorWarning.g, colorWarning.b, 0.4)
-                        }
-                    }
-                }
-            }
-            */
             Rectangle {
                 color: colorMain
                 implicitWidth: 1
